@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="songs" routerLinkActive="active" class="nav-link">Song List</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="add-song" routerLinkActive="active" class="nav-link">Add song</a>
+        </li>
+    </ul>
+</nav>
+
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span>A web app to add new favourite songs to a list.</span>
+    </div>
+</footer>

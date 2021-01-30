@@ -1,0 +1,19 @@
+<h2>Song List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Title </th>
+            <th> Artist</th>
+            <th> Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let song of songs" >
+            <td>{{song.title}}</td>
+            <td>{{song.artist}}</td>
+            <td><button (click) = "editSongs(song.id)" class="btn btn-info">Update</button></td>
+            <td><button (click) = "deleteSong(song.id)" class="btn btn-danger" style="margin-left:5px">Delete</button></td>
+            <td><button (click) = "songDetails(song.id)" class="btn btn-info" style="margin-left:5px">Details</button></td>
+        </tr>
+    </tbody>
+</table>
